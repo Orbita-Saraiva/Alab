@@ -1,0 +1,115 @@
+:root {
+  font-size: 62,5%;
+}
+
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  user-select: none;
+  animation: downtop 700ms 350ms backwards;
+}
+
+body{
+  background-color: #182527;
+  max-width: 100%;
+  height: 100;
+}
+
+header{
+  text-align: center;
+}
+
+header h1 {
+  color:#20CD8D;
+  margin-bottom: 5px;
+}
+
+
+header p {
+  color:#CCF4E5;
+  margin-bottom: 21px;
+}
+
+.blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+
+main {
+  align-items: center;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+main a button{
+  border: none;
+  background-color: #5effc4;
+  color: #000000;
+  height: 2.6rem;
+  width: 9rem;
+  border-radius: 28px;
+  transition-duration: 4ms;
+}
+
+main a button:hover{
+  cursor: pointer;
+  background-color: #000000;
+  color: #5effc4;
+  width: 12rem;
+  height: 2.8rem;
+  transition-duration: 4ms;
+}
+
+.footer{
+  display: flex;
+  justify-content: center;
+}
+
+ul{
+
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+svg {
+
+  width: 40px;
+  height: 40px;
+  fill:#00c47c ;
+  transition: 5ms;
+  margin-top: 34px;
+}
+svg:hover {
+ fill: #0f5c40;
+ width: 45px;
+ height: 45px;
+ transition: 5ms;
+
+}
+
+
+@keyframes downtop {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
